@@ -7,4 +7,4 @@ RUN cd build && dotnet restore
 # copy and build everything else
 COPY . ./build/
 RUN cd build && dotnet publish -c Release -o out
-ENTRYPOINT ["dotnet", "build/out/IoTSinc.dll"]
+ENTRYPOINT ["dotnet", "build/out/IoTSink.dll"]
